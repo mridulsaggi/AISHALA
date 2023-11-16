@@ -1,6 +1,7 @@
 import express from "express";
-import { deletePost, getPost, likePost, newPost, timelinePost, updatePost } from "../controllers/Post.js";
-import {StudentPost} from "../models/StudentPost.js"
+import { deletePost, getPost, likePost, newPost, timelinePost, updatePost } from "../Posts/Controllers/Post.js";
+import {StudentPost} from "../Posts/models/StudentPost.js"
+
 
 const studentrouter = express.Router();
 
