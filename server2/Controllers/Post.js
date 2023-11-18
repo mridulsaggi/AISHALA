@@ -2,7 +2,10 @@ export const newPost = async (req, res, Db) => {
   const newPost = new Db(req.body);
   try {
     const savedPost = await newPost.save();
-    res.status(200).json(savedPost);
+    res.status(200).json({
+      success: true,
+      savedPost,
+    });
   } catch (error) {
     res.status(500).json(error);
   }
