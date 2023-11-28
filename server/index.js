@@ -6,8 +6,10 @@ import cors from "cors";
 import router from "../server/routers/authrouter.js";
 import tutorrouter from "../server/routers/tutorPost.js";
 import dotenv from "dotenv";
+
 import studentrouter from "../server/routers/studentPost.js";
 const app = express();
+dotenv.config();
 // =======
 // import cors from "cors";
 // import router from "../routers/authrouter.js";
